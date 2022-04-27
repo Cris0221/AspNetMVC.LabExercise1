@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "noRLI8a1LvUuWH0yS5ueSoOaQycsD9hGE3x74lRTH3bILWPPKNZ5y+xjvKApMRp0SQ5+NKVP74GGMXZ1SOzpAg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\cristobal.fragata\\source\\repos\\AspNetMVC.LabExercise1\\AspNetMVC.LabExercise1\\AspNetMVC.LabExercise1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cristobal.fragata\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}

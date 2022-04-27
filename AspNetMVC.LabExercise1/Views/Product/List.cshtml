@@ -1,0 +1,34 @@
+﻿@using AspNetMVC.LabExercise1.Models;
+@using System.Collections.Generic;
+@{
+    var productList = ViewData["List"] as List<Product>;
+    var grandTotal = ViewData["GrandTotal"];
+}
+<div>
+    <h2 style="text-align:center">Product List</h2>
+    <table class="table table-dark table-sm">
+        <tr>
+            <td align="center">ID</td>
+            <td align="center">Name</td>
+            <td align="center">Description</td>
+            <td align="center">Quantity</td>
+            <td align="center">Price</td>
+            <td align="right">TotalAmount</td>
+        </tr>
+        @foreach(var product in productList)
+        {
+            <tr>
+                <td align="center">@product.Id</td>
+                <td align="center">@product.Name</td>
+                <td>@product.Description</td>
+                <td align="center">@product.Quantity </td>
+                <td align="center">@product.Price </td>
+                <td align="right">@product.TotalAmount</td>              
+            </tr>
+        }
+        <tr>
+            <td align="right" colspan="5"> <span style="color: indianred;font-weight:bold">GrandTotal:</span></td>
+            <td align="right", colspan="6"> <span style="color: red">@grandTotal</span></td>
+        </tr>
+    </table>
+</div>
