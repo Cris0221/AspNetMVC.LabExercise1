@@ -14,7 +14,7 @@ namespace AspNetMVC.LabExercise1.Controllers
         public IActionResult List()
         {
             ViewData["List"] = _productService.GetCatalog();
-            ViewData["GrandTotal"] = _productService.GetGrandtotal();
+            ViewData["GrandTotal"] = _productService.GetGrandtotal().ToString("C2");
             return View();
         }
     }

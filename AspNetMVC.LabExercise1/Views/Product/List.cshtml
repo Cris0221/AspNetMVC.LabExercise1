@@ -22,13 +22,13 @@
                 <td align="center">@product.Name</td>
                 <td>@product.Description</td>
                 <td align="center">@product.Quantity </td>
-                <td align="center">@product.Price </td>
-                <td align="right">@product.TotalAmount</td>              
+                <td align="center">@product.Price.ToString("C2") </td>
+                <td align="right">@product.TotalAmount.ToString("C2")</td>              
             </tr>
         }
         <tr>
             <td align="right" colspan="5"> <span style="color: indianred;font-weight:bold">GrandTotal:</span></td>
-            <td align="right", colspan="6"> <span style="color: red">@grandTotal</span></td>
+            <td align="right", colspan="6"> <span style="color: red;font-weight:bold"">@grandTotal</span></td>
         </tr>
     </table>
 </div>
